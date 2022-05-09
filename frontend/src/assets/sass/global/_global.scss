@@ -1,0 +1,107 @@
+// Font Import
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// Global Styles
+body {
+  background-color: $background_color_primary;
+  color: $text_color;
+  font-family: $font_family;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+// Cuastom class styles
+.title {
+  font-size: $font_size_title;
+  font-weight: $font_weight_title;
+  margin: 0;
+  text-align: center;
+}
+
+.sub-title {
+  font-size: $font_size_sub_title;
+  font-weight: $font_weight_sub_title;
+  margin: 0;
+}
+
+.button {
+  background-color: $background_color_third;
+  border: none;
+  color: $text_color;
+  cursor: pointer;
+  font-size: $font_size_button;
+  font-weight: $font_weight_button;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: $transition;
+
+  &:hover {
+    background-color: lighten($background_color_third, 5);
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.button-edit {
+  background-color: $background_edit_button;
+
+  &:hover {
+    background-color: lighten($background_edit_button, 7);
+  }
+}
+
+.button-delete {
+  background-color: $background_delete_button;
+
+  &:hover {
+    background-color: lighten($background_delete_button, 7);
+  }
+}
+
+.button-delete,
+.button-edit {
+  i {
+    margin-right: 5px;
+    transition: $transition;
+  }
+
+  &:hover > i {
+    margin-right: 8px;
+    transform: scale(1.5);
+  }
+}
+
+.main {
+  left: 0;
+  max-height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: relative;
+  top: 0;
+  width: 100vw;
+
+  .list-title {
+    margin-bottom: 40px;
+  }
+
+  .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+
+    h1 {
+      margin-top: 15px;
+    }
+  }
+}

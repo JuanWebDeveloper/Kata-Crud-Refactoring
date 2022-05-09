@@ -1,0 +1,23 @@
+// Backgrounds
+$background_color_primary: #0d1117;
+$background_color_secondary: lighten($background_color_primary, 15);
+$background_color_third: #12122b;
+$background_color_fourth: lighten(#192229, 1);
+$background_edit_button: #034be6;
+$background_delete_button: #fd0808;
+
+// Text Colors
+$text_color: #f1f1f1;
+
+// Fonts
+$font_family: 'Poppins', sans-serif;
+$font_size_title: 2.8rem;
+$font_size_sub_title: 1.9rem;
+$font_size_button: 1.25rem;
+$font_size_tasks: 1.5rem;
+$font_weight_title: 600;
+$font_weight_sub_title: 500;
+$font_weight_button: 600;
+
+// Transition
+$transition: all 0.3s ease-in-out;

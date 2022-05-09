@@ -1,0 +1,61 @@
+.form {
+  display: flex;
+  margin-top: 25px;
+  position: relative;
+  width: 50%;
+  margin-bottom: 5px;
+
+  input {
+    background-color: $background_color_secondary;
+    border: none;
+    color: $text_color;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: $transition;
+    width: 80%;
+
+    &::placeholder {
+      color: rgba($color: $text_color, $alpha: 0.5);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input.active {
+    border-bottom: 2px solid $background_delete_button;
+  }
+
+  button {
+    width: 20%;
+  }
+}
+
+.form-errors {
+  background-color: $background_delete_button;
+  height: 0;
+  margin-bottom: 50px;
+  position: relative;
+  padding: 0;
+  transition: $transition;
+  width: 50%;
+
+  h2 {
+    font-weight: $font_weight_sub_title;
+    margin: 0;
+    opacity: 0;
+    text-align: center;
+    transition: $transition;
+  }
+}
+
+.form-errors.active {
+  height: auto;
+  padding: 5px 0;
+
+  h2 {
+    opacity: 1;
+  }
+}
